@@ -58,18 +58,20 @@
     }
 
     .avatar {
-      width: 56px;
-      height: 56px;
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
-      background: #1a1a1a;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 18px;
-      letter-spacing: -0.5px;
+      overflow: hidden;
       flex-shrink: 0;
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .name-block { display: flex; flex-direction: column; gap: 8px; }
@@ -328,7 +330,7 @@
 
     <!-- Profile Card -->
     <div class="card profile-card">
-      <div class="avatar">YM</div>
+      <div class="avatar"><img src="avatar.png" alt="Yosef Madboly" /></div>
       <div class="name-block">
         <h1>Yosef Madboly</h1>
         <span class="badge">Software Engineer</span>
